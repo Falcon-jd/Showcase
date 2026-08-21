@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Just Chill — smart wearable cooling for extreme heat.">
+  <title>JUST CHILL — Smart Cooling Jacket</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-1"></div>
+  <div class="ambient ambient-2"></div>
 
+  <header class="header" id="top">
+    <a class="logo" href="#top" aria-label="Just Chill home">
+      <span class="logo-mark">❄</span><span>JUST <b>CHILL</b></span>
+    </a>
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+    <nav class="nav">
+      <a class="active" href="#top">Home</a>
+      <a href="#product">Product</a>
+      <a href="#technology">Technology</a>
+      <a href="#app">App</a>
+      <a href="#testing">Testing</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Get in touch</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">❄ JUST CHILL JACKET</div>
+        <h1>SMART COOLING<br>FOR <span>EXTREME HEAT.</span></h1>
+        <p>Just Chill is a wearable cooling concept powered by Peltier technology, designed to help workers stay cooler and more comfortable in demanding environments.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#product">Explore product <span>→</span></a>
+          <a class="btn ghost" href="#technology"><span class="play">▶</span> How it works</a>
+        </div>
+        <div class="hero-note"><span class="dot"></span> Prototype development in progress</div>
+      </div>
+
+      <div class="hero-visual">
+        <img src="assets/just-chill-visual.png" alt="Just Chill cooling jacket concept">
+      </div>
+    </section>
+
+    <section class="metrics">
+      <div><strong>42°C+</strong><small>Extreme heat conditions</small></div>
+      <div><strong>ACTIVE</strong><small>Peltier cooling concept</small></div>
+      <div><strong>SMART</strong><small>App-connected control</small></div>
+      <div><strong>TEST</strong><small>Measured performance first</small></div>
+      <div><strong>SAFE</strong><small>Designed for responsible use</small></div>
+    </section>
+
+    <section class="three-grid" id="product">
+      <article class="panel problem">
+        <div class="section-kicker">THE <span>PROBLEM</span></div>
+        <h2>Heat makes hard work harder.</h2>
+        <p>High-temperature environments can make physical work uncomfortable and reduce productivity. Just Chill explores an active, wearable approach to cooling.</p>
+        <div class="heat-card"><span>40°C+</span><small>Extreme heat example</small></div>
+      </article>
+
+      <article class="panel solution">
+        <div class="section-kicker">OUR <span>SOLUTION</span></div>
+        <h2>Active cooling, built into the jacket.</h2>
+        <p>The system combines thermoelectric cooling, heat dissipation, airflow and monitoring in one wearable platform.</p>
+        <div class="feature-mini">
+          <span>❄</span><div><b>Peltier cooling</b><small>Thermoelectric heat transfer</small></div>
+        </div>
+        <div class="feature-mini">
+          <span>↯</span><div><b>Heat dissipation</b><small>Hot-side management</small></div>
+        </div>
+        <div class="feature-mini">
+          <span>◉</span><div><b>Smart monitoring</b><small>Track system conditions</small></div>
+        </div>
+      </article>
+
+      <article class="panel app-card" id="app">
+        <div class="section-kicker">JUST <span>CHILL APP</span></div>
+        <h2>Your cooling system at a glance.</h2>
+        <p>Future app interface for monitoring temperature, cooling level, battery and usage history.</p>
+        <div class="phone-row">
+          <div class="phone"><div class="phone-top"></div><small>Temperature</small><strong>28°</strong><div class="bar"></div><small>Cooling</small><strong>75%</strong><div class="bar short"></div><small>Battery</small><strong>82%</strong></div>
+          <div class="phone secondary"><div class="phone-top"></div><small>History</small><div class="chart"><i></i><i></i><i></i><i></i><i></i></div><small>Runtime</small><strong>—</strong></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="technology" id="technology">
+      <div class="section-heading">
+        <div class="section-kicker">HOW IT <span>WORKS</span></div>
+        <h2>Peltier cooling, simplified.</h2>
+        <p>Electricity drives heat transfer from the cold side to the hot side. The hot side then needs effective heat removal.</p>
+      </div>
+      <div class="flow">
+        <div class="flow-card"><span>01</span><b>Battery</b><small>Supplies DC power</small></div>
+        <div class="arrow">→</div>
+        <div class="flow-card cold"><span>02</span><b>Peltier</b><small>Moves heat</small></div>
+        <div class="arrow">→</div>
+        <div class="flow-card"><span>03</span><b>Cold side</b><small>Cooling interface</small></div>
+        <div class="arrow">+</div>
+        <div class="flow-card hot"><span>04</span><b>Hot side</b><small>Heatsink + airflow</small></div>
+      </div>
+      <div class="warning">Important engineering point: cooling the hot side is essential for useful Peltier performance.</div>
+    </section>
+
+    <section class="testing" id="testing">
+      <div class="section-heading">
+        <div class="section-kicker">PROTOTYPE <span>TESTING</span></div>
+        <h2>Real data over big claims.</h2>
+        <p>These fields are ready for measurements from the physical prototype.</p>
+      </div>
+      <div class="test-grid">
+        <div><small>Ambient</small><strong>XX °C</strong><em>To be measured</em></div>
+        <div><small>Cold-side</small><strong>XX °C</strong><em>To be measured</em></div>
+        <div><small>Hot-side</small><strong>XX °C</strong><em>To be measured</em></div>
+        <div><small>Runtime</small><strong>XX h</strong><em>To be measured</em></div>
+        <div><small>Weight</small><strong>XX kg</strong><em>To be measured</em></div>
+        <div><small>Power</small><strong>XX W</strong><em>To be measured</em></div>
+      </div>
+    </section>
+
+    <section class="vision" id="about">
+      <div>
+        <div class="section-kicker">THE <span>VISION</span></div>
+        <h2>Cooler work.<br><span>Smarter technology.</span></h2>
+      </div>
+      <p>Just Chill is being developed as a student-led engineering project with a focus on practical testing, wearable design and connected cooling technology.</p>
+    </section>
+
+    <section class="cta" id="contact">
+      <div>
+        <div class="section-kicker">LET'S BUILD THE <span>FUTURE</span></div>
+        <h2>Interested in the project?</h2>
+        <p>We are looking for feedback, technical collaboration and future industry partnerships.</p>
+      </div>
+      <a class="btn primary" href="mailto:hello@justchill.example">Contact us →</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo"><span class="logo-mark">❄</span><span>JUST <b>CHILL</b></span></div>
+    <span>© 2026 Just Chill. Prototype project.</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
